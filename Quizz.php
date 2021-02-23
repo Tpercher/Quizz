@@ -6,7 +6,7 @@
 	
 	<title>Quiz Avatar</title>
 	
-	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
