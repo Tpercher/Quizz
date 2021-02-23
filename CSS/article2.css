@@ -1,0 +1,171 @@
+html{
+	background-color: #F5F5DC;
+}
+
+h2{
+	margin-top: 30px;
+	color: #008080;
+	text-align: center;
+	font-size: 35px;
+}
+
+/*
+
+
+
+
+Image
+
+
+
+
+*/
+
+.Banniere_img{
+	margin-top: 40px;
+	width: 55%;
+	height: 220px;
+	border-radius: 10px;
+	background: url('Images/Fond.jpg') no-repeat;
+	margin-left: 23%;
+}
+
+.rond{
+	border-radius: 100%;
+	width: 85px;
+	height: 75px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+/*
+
+
+
+
+Ligne de séparation
+
+
+
+
+*/
+
+.deco{
+	margin-top: 20px;
+	width: 540px;
+	height: 1px;
+	background-color: tomato;
+}
+
+/*
+
+
+
+
+Body
+
+
+
+
+*/
+
+.intro p{
+	font-family: Times;
+	font-size: 16px;
+	text-align: center;
+	width: 55%;
+	margin-left: 23%;
+}
+
+p.partie1{
+	font-size: 20px;
+	color: #008080;
+	font-weight: bold;
+	text-align: center;
+}
+
+ p.partie2{
+ 	font-size: 20px;
+ 	color: tomato;
+ 	font-weight: bold;
+ 	text-align: center;
+ }
+
+p.partie3{
+	font-size: 20px;
+	color: #3CB371;
+	font-weight: bold;
+	text-align: center;
+}
+
+.conclusion{
+	margin-top: 200px;
+	width: 600px;
+	margin-left: 340px;
+	border-radius: 15px;
+	padding: 10px;
+	border: 5px solid tomato;
+}
+
+.conclusion p{
+	width: 590px;
+	text-align: center;
+}
+
+/*
+
+
+
+
+Colonnes
+
+
+
+
+*/
+
+.ColonneG{
+	float: left;
+	margin-left: 3%;
+	width: 25%;
+}
+
+.ColonneD{
+	float: right;
+	margin-right: 2%;
+	width: 25%;
+}
+
+.ColonneC{
+	margin-left: 38%;
+	width: 25%;
+}
+
+/*
+
+
+
+
+Footer
+
+
+
+
+*/
+
+footer {
+	margin-top: 150px;
+	margin-bottom: 0;
+	background-color: #DC143C;
+	color: white;
+	width: 100%;
+	height: 20px;
+	text-align: right;
+}
+
+.ML{
+  text-decoration: none;
+  color: white;
+}
+
+

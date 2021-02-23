@@ -1,0 +1,306 @@
+html{
+    background-color: black;
+}
+
+/*
+
+
+
+Liens et Réseau sociaux, menu burger ne marche plus
+
+
+
+*/
+
+
+
+/* 
+
+
+
+
+MENU Burger
+
+
+
+
+*/
+
+#menu a:hover{
+	color: #3CB371;
+	background-color: black;
+}
+
+#menu, #menu ul /* Liste */     
+{
+        padding : 0; 
+        margin : 0; 
+        list-style : none; 
+        line-height : 21px; 
+        text-align : center; 
+}
+
+#menu /* Ensemble du menu */
+{
+        font-weight : bold; 
+        font-family : Arial; 
+        font-size : 15px; 
+}
+
+#menu a /* Contenu des listes */
+{
+        display : inline; 
+        padding : 0;      
+        color : white; 
+        text-decoration : none; 
+        width : 11.5%;                   /* POUR LE MENU RESPONSIVE !!!!!!!!!!!! */
+        float: left;
+}
+
+#menu li a{
+	float: left;
+}
+
+html>body #menu li ul ul                
+{
+    border-left: 1px solid transparent ; 
+}
+
+.menu{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	float: left;
+	max-height: 0px;
+	overflow-y:hidden; /* hidden cache le texte */
+	text-align: center;
+}
+
+.menu li{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	width: 100%;
+}
+.menu li:hover{
+	background: #eee;
+	cursor: pointer;
+}
+
+.menu li:first-child{
+	border-right: 0;
+}
+.menu a:hover{
+	text-decoration: none;
+	color: #666;
+}
+
+.menu a{
+    margin-left: 6.5%;
+}
+
+body, html{
+	font-size: 16px;
+	font-family: arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	float: left;
+	margin: 1% 3%;
+}
+.mainMenu{
+	display: inline;
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 1.4%;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0px 0px 3px 5px #ececec;
+}
+label.menuTitle{
+	font-size: 0px;
+	padding: 3px 3%;
+	margin: 0;
+	width: 0%;
+	display: block;
+	cursor: pointer;
+	background: url(Images/icone-burger.png) no-repeat 37% 5px;
+	background-size: 25px 25px;
+}
+
+
+/* 
+
+
+
+clear 
+
+
+
+*/
+
+.clear {
+	clear: both;
+}
+
+/*    
+
+
+
+
+image déroulante   
+
+
+
+
+*/
+.slideshow,
+.slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    margin-top: 4%;
+}
+
+.slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 24s linear infinite 0s;
+    -moz-animation: imageAnimation 24s linear infinite 0s;
+    -o-animation: imageAnimation 24s linear infinite 0s;
+    -ms-animation: imageAnimation 24s linear infinite 0s;
+    animation: imageAnimation 24s linear infinite 0s; 
+}
+.slideshow li div { 
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleAnimation 24s linear infinite 0s;
+    -moz-animation: titleAnimation 24s linear infinite 0s;
+    -o-animation: titleAnimation 24s linear infinite 0s;
+    -ms-animation: titleAnimation 24s linear infinite 0s;
+    animation: titleAnimation 24s linear infinite 0s; 
+}
+.slideshow li:nth-child(1) span { 
+    background-image: url(Images/hd-wallpapers-of-avatar-3.jpg) 
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url(Images/photo-1.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url(Images/e2c5af3eb9429cd697e1c1aba715e083.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url(Images/IMG_104746.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+
+}
+.slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.slideshow li:nth-child(4) div { 
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+
+}
+/* Animation pour le slideshow des images */
+
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .slideshow li span{
+	opacity: 1;
+}
+
+footer{
+    margin-top: 50%;
+    color: white;
+    text-align: right;
+}
